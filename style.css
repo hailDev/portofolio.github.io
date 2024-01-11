@@ -277,6 +277,11 @@ section {
   gap: 1rem;
 }
 
+/* CERTIFICATE SECTION */
+#certificates {
+  position: relative;
+}
+
 /* ABOUT SECTION */
 
 #about {
