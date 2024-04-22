@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:type" content="article" >
+    <meta prefix="og: http://ogp.me/ns#" property="og:title" name="title" class="title" content="<?= @$title ?? 'Digital Business Review' ?>" >
+    <meta prefix="og: http://ogp.me/ns#" property="og:description" name="description" content="<?= @$desc ?? 'Lorem ipsum dolor sir amet' ?>">
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" name="image" class="image" content="<?= @$image ?? 'assets/memtorimg.jpg' ?>" >
+    <meta prefix="og: http://ogp.me/ns#" property="og:url" name="uri" class="uri" content="<?= @$uri ?? 'https://fachrurrozi-haildev.vercel.app/' ?>" >
+    <meta property="og:image:secure_url" content="<?= @$image ?? 'assets/memtorimg.jpg' ?>" >
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
@@ -496,6 +502,20 @@
 
               <article>
                 <img
+                  src="./assets/tfdc_badge.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <a
+                    href="https://www.credential.net/01cc0a57-0ad6-4f35-9e76-c7ee9ea80622"
+                  >
+                    <h3>Tensorflow Developer Certification</h3>
+                  </a>
+                </div>
+              </article>
+              <article>
+                <img
                   src="./assets/coursera.png"
                   alt="Experience icon"
                   class="icon"
@@ -509,12 +529,10 @@
                 </div>
               </article>
             </div>
-            <div
-              class="icon"
-              style="margin-top: 20px"
-              onclick="location.href='https://www.linkedin.com/in/fachrur-rozi21'"
-            >
-              <p>More in my LinkedIn</p>
+            <div style="margin-top: 20px;">
+              <a style="text-decoration: none;" href='https://www.linkedin.com/in/fachrur-rozi21'>
+                <p>More in my LinkedIn</p>
+              </a>
             </div>
           </div>
         </div>
